@@ -20,8 +20,8 @@ ul {
 nav {
   display: inline-flex;
   align-items: center;
-  width: 40%;
-  gap: 30%;
+  width: 32%;
+  justify-content: space-between;
   border: 1px solid rgb(214, 27, 27);
 }
 
