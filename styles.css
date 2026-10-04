@@ -16,7 +16,6 @@ ul {
   padding: 0;
 }
 
-/* need to work on gap property for the space between the logout button and the nav bar */
 nav {
   display: inline-flex;
   align-items: center;
