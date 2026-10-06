@@ -37,10 +37,7 @@ nav {
 }
 
 h1 {
-  box-sizing: border-box;
   border: 1px solid black;
-  position: relative;
-  width: calc(100% - 45px);
-  top: 30px;
-  left: 45px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
