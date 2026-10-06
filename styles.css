@@ -53,3 +53,7 @@ h1 {
 #filter > h3 {
   margin: 12px 12px 0px;
 }
+
+#filter > hr {
+  margin: 6px 12px;
+}
