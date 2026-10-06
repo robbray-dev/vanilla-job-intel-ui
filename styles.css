@@ -50,7 +50,7 @@ h1 {
 }
 
 /*a child selector for targeting the h3 element*/
-#filter > h3 {
+h3 {
   margin: 12px 12px 0px;
 }
 
