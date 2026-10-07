@@ -68,5 +68,5 @@ input {
 
 .remote-only-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
