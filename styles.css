@@ -62,3 +62,8 @@ hr {
 input {
   margin: 12px;
 }
+
+.remote-only-container {
+  display: flex;
+  align-items: center;
+}
