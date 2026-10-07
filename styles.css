@@ -63,10 +63,7 @@ input {
   margin: 12px;
 }
 #remote-only-input {
-  margin: 0;
-}
-#remote-header {
-  margin: 0;
+  margin: 12px 12px 0px;
 }
 
 .remote-only-container {
