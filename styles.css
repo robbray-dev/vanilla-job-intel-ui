@@ -65,8 +65,16 @@ input {
 #remote-only-input {
   margin: 12px 12px 0px;
 }
-
+.salary-fields {
+  margin: 0;
+}
 .remote-only-container {
   display: flex;
   align-items: baseline;
+  border: 1px solid black;
+}
+
+.master-flex {
+  display: flex;
+  border: 1px solid black;
 }
