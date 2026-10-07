@@ -67,14 +67,23 @@ input {
 }
 .salary-fields {
   margin: 0;
+  width: 55px;
 }
 .remote-only-container {
   display: flex;
   align-items: baseline;
   border: 1px solid black;
 }
+.salary-boxes {
+  border: 1px solid red;
+}
 
 .master-flex {
+  margin-left: 12px;
   display: flex;
   border: 1px solid black;
+}
+
+#s {
+  margin-left: 12px;
 }
