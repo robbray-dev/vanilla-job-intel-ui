@@ -67,7 +67,7 @@ input {
 }
 .salary-fields {
   margin: 0;
-  width: 55px;
+  width: 60px;
 }
 .remote-only-container {
   display: flex;
@@ -75,15 +75,12 @@ input {
   border: 1px solid black;
 }
 .salary-boxes {
-  border: 1px solid red;
+  flex-direction: column;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 12px;
 }
 
 .master-flex {
-  margin-left: 12px;
   display: flex;
-  border: 1px solid black;
-}
-
-#s {
-  margin-left: 12px;
 }
