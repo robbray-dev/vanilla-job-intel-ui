@@ -23,9 +23,12 @@
     <!-- Browse Jobs header -->
     <h1>Browse Jobs</h1>
 
+    <!-- filter box -->
     <div id="filter">
       <h3>Filters</h3>
       <hr />
+
+      <!-- roles filter -->
       <h3>Role</h3>
       <form action="">
         <label for="">
@@ -35,6 +38,8 @@
           <input type="checkbox" name="role" value="data" />Data<br />
         </label>
         <hr />
+
+        <!-- location filter -->
         <h3>Location</h3>
         <label for="">
           <input type="checkbox" name="location" value="remote" />Remote<br />
@@ -45,18 +50,23 @@
           <input type="checkbox" name="location" value="seattle" />Seattle<br />
         </label>
         <hr />
+
+        <!-- Remote only filter -->
         <h3>Remote Only</h3>
         <label for="">
           <input type="checkbox" name="remote-only" value="remote-only" /><br />
         </label>
-
         <hr />
+
+        <!-- salary range filter -->
         <h3>Salary Range</h3>
         <label for="min"> Min salary </label>
         <input type="text" id="min" />
         <label for="max"> Max salary </label>
         <input type="text" id="max" />
         <hr />
+
+        <!-- skills filter -->
         <h3>Skills</h3>
         <label for="">
           <input type="checkbox" name="skill" value="aws" />AWS<br />
