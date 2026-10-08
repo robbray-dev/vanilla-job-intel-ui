@@ -84,3 +84,11 @@ input {
 .master-flex {
   display: flex;
 }
+
+button {
+  margin: 12px;
+}
+
+.buttons {
+  white-space: nowrap;
+}
