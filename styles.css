@@ -33,6 +33,7 @@ nav {
 .responsive-header {
   border: 1px solid black;
   display: flex;
+  color: white;
   gap: 60%;
 }
 
