@@ -23,168 +23,184 @@
     <!-- Browse Jobs header -->
     <h1>Browse Jobs</h1>
 
-    <!-- filter box -->
-    <div id="filter">
-      <h3>Filters</h3>
-      <hr />
-
-      <!-- roles filter -->
-      <h3>Role</h3>
-      <form action="">
-        <!-- backend choice  -->
-        <!-- labels for accessibilty and screen reader purposes -->
-        <label for="backend">
-          <input
-            id="backend"
-            type="checkbox"
-            name="role"
-            value="backend"
-          />Backend<br />
-        </label>
-
-        <!-- devops choice -->
-        <label for="devops">
-          <input
-            id="devops"
-            type="checkbox"
-            name="role"
-            value="devops"
-          />DevOps<br />
-        </label>
-
-        <!-- full stack choice -->
-        <label for="full-stack">
-          <input
-            id="full-stack"
-            type="checkbox"
-            name="role"
-            value="full-stack"
-          />Full Stack<br />
-        </label>
-
-        <label for="data">
-          <input id="data" type="checkbox" name="role" value="data" />Data<br />
-        </label>
-
+    <div id="browse-page-body">
+      <!-- filter box -->
+      <div id="filter">
+        <h3>Filters</h3>
         <hr />
 
-        <!-- location filter -->
-        <h3>Location</h3>
+        <!-- roles filter -->
+        <h3>Role</h3>
+        <form action="">
+          <!-- backend choice  -->
+          <!-- labels for accessibilty and screen reader purposes -->
+          <label for="backend">
+            <input
+              id="backend"
+              type="checkbox"
+              name="role"
+              value="backend"
+            />Backend<br />
+          </label>
 
-        <label for="remote">
-          <input
-            id="remote"
-            type="checkbox"
-            name="location"
-            value="remote"
-          />Remote<br />
-        </label>
+          <!-- devops choice -->
+          <label for="devops">
+            <input
+              id="devops"
+              type="checkbox"
+              name="role"
+              value="devops"
+            />DevOps<br />
+          </label>
 
-        <label for="san-fransico">
-          <input
-            id="san-fransico"
-            type="checkbox"
-            name="location"
-            value="san-fransico"
-          />San Fransico<br />
-        </label>
+          <!-- full stack choice -->
+          <label for="full-stack">
+            <input
+              id="full-stack"
+              type="checkbox"
+              name="role"
+              value="full-stack"
+            />Full Stack<br />
+          </label>
 
-        <label for="new-york">
-          <input
-            id="new-york"
-            type="checkbox"
-            name="location"
-            value="new-york"
-          />New York<br />
-        </label>
+          <label for="data">
+            <input
+              id="data"
+              type="checkbox"
+              name="role"
+              value="data"
+            />Data<br />
+          </label>
 
-        <label for="austin">
-          <input
-            id="austin"
-            type="checkbox"
-            name="location"
-            value="austin"
-          />Austin<br />
-        </label>
+          <hr />
 
-        <label for="seattle">
-          <input
-            id="seattle"
-            type="checkbox"
-            name="location"
-            value="seattle"
-          />Seattle<br />
-        </label>
-        <hr />
+          <!-- location filter -->
+          <h3>Location</h3>
 
-        <!-- Remote only filter -->
+          <label for="remote">
+            <input
+              id="remote"
+              type="checkbox"
+              name="location"
+              value="remote"
+            />Remote<br />
+          </label>
 
-        <label id="flex-label" for="remote-only-input">
-          <h3>Remote Only</h3>
-          <input
-            id="remote-only-input"
-            type="checkbox"
-            name="remote-only"
-            value="remote-only"
-          /><br />
-        </label>
+          <label for="san-fransico">
+            <input
+              id="san-fransico"
+              type="checkbox"
+              name="location"
+              value="san-fransico"
+            />San Fransico<br />
+          </label>
 
-        <hr />
+          <label for="new-york">
+            <input
+              id="new-york"
+              type="checkbox"
+              name="location"
+              value="new-york"
+            />New York<br />
+          </label>
 
-        <!-- salary range filter -->
-        <h3>Salary Range</h3>
+          <label for="austin">
+            <input
+              id="austin"
+              type="checkbox"
+              name="location"
+              value="austin"
+            />Austin<br />
+          </label>
 
-        <!-- min salary box -->
-        <div class="master-flex">
-          <div class="salary-boxes">
-            <label for="min"> Min salary </label>
-            <input type="text" id="min" class="salary-fields" />
+          <label for="seattle">
+            <input
+              id="seattle"
+              type="checkbox"
+              name="location"
+              value="seattle"
+            />Seattle<br />
+          </label>
+          <hr />
+
+          <!-- Remote only filter -->
+
+          <label id="flex-label" for="remote-only-input">
+            <h3>Remote Only</h3>
+            <input
+              id="remote-only-input"
+              type="checkbox"
+              name="remote-only"
+              value="remote-only"
+            /><br />
+          </label>
+
+          <hr />
+
+          <!-- salary range filter -->
+          <h3>Salary Range</h3>
+
+          <!-- min salary box -->
+          <div class="master-flex">
+            <div class="salary-boxes">
+              <label for="min"> Min salary </label>
+              <input type="text" id="min" class="salary-fields" />
+            </div>
+
+            <!-- max salary box -->
+            <div class="salary-boxes">
+              <label for="max"> Max salary </label>
+              <input type="text" id="max" class="salary-fields" />
+            </div>
           </div>
+          <hr />
 
-          <!-- max salary box -->
-          <div class="salary-boxes">
-            <label for="max"> Max salary </label>
-            <input type="text" id="max" class="salary-fields" />
+          <!-- skills filter -->
+          <h3>Skills</h3>
+          <label for="aws">
+            <input id="aws" type="checkbox" name="skill" value="aws" />AWS<br />
+          </label>
+
+          <label for="java">
+            <input
+              id="java"
+              type="checkbox"
+              name="skill"
+              value="java"
+            />Java<br />
+          </label>
+
+          <label for="sql">
+            <input id="sql" type="checkbox" name="skill" value="sql" />SQL<br />
+          </label>
+
+          <label for="docker">
+            <input
+              id="docker"
+              type="checkbox"
+              name="skill"
+              value="docker"
+            />Docker<br />
+          </label>
+
+          <hr />
+
+          <!-- buttons grouping -->
+          <div class="buttons">
+            <button type="reset">Clear all filters</button>
+            <button type="submit">Submit</button>
           </div>
-        </div>
-        <hr />
+        </form>
 
-        <!-- skills filter -->
-        <h3>Skills</h3>
-        <label for="aws">
-          <input id="aws" type="checkbox" name="skill" value="aws" />AWS<br />
-        </label>
+        <!-- End of filter box -->
+      </div>
 
-        <label for="java">
-          <input
-            id="java"
-            type="checkbox"
-            name="skill"
-            value="java"
-          />Java<br />
-        </label>
+      <!-- beginning of browse page body with filter and inner page body -->
 
-        <label for="sql">
-          <input id="sql" type="checkbox" name="skill" value="sql" />SQL<br />
-        </label>
-
-        <label for="docker">
-          <input
-            id="docker"
-            type="checkbox"
-            name="skill"
-            value="docker"
-          />Docker<br />
-        </label>
-
-        <hr />
-
-        <!-- buttons grouping -->
-        <div class="buttons">
-          <button type="reset">Clear all filters</button>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+      <!-- inner page body with search bar, listings, etc -->
+      <div id="inner-browse-page-body">
+        <h2>Backend Engineer Jobs</h2>
+      </div>
     </div>
   </body>
 </html>
