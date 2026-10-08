@@ -94,3 +94,13 @@ button {
   display: flex;
   align-items: baseline;
 }
+
+#browse-page-body {
+  display: flex;
+  gap: 2.5%;
+  border: 1px solid black;
+}
+
+#inner-browse-page-body {
+  border: 1px solid black;
+}
