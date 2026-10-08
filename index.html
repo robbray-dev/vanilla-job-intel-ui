@@ -31,12 +31,41 @@
       <!-- roles filter -->
       <h3>Role</h3>
       <form action="">
-        <label for="">
-          <input type="checkbox" name="role" value="backend" />Backend<br />
-          <input type="checkbox" name="role" value="devops" />DevOps<br />
-          <input type="checkbox" name="role" value="full-stack" />Full Stack<br />
-          <input type="checkbox" name="role" value="data" />Data<br />
+        <!-- backend choice  -->
+        <!-- labels for accessibilty and screen reader purposes -->
+        <label for="backend">
+          <input
+            id="backend"
+            type="checkbox"
+            name="role"
+            value="backend"
+          />Backend<br />
         </label>
+
+        <!-- devops choice -->
+        <label for="devops">
+          <input
+            id="devops"
+            type="checkbox"
+            name="role"
+            value="devops"
+          />DevOps<br />
+        </label>
+
+        <!-- full stack choice -->
+        <label for="full-stack">
+          <input
+            id="full-stack"
+            type="checkbox"
+            name="role"
+            value="full-stack"
+          />Full Stack<br />
+        </label>
+
+        <label for="data">
+          <input id="data" type="checkbox" name="role" value="data" />Data<br />
+        </label>
+
         <hr />
 
         <!-- location filter -->
