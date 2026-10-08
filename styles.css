@@ -69,9 +69,7 @@ input {
   margin: 0;
   width: 60px;
 }
-.remote-only-container {
-  display: flex;
-}
+
 .salary-boxes {
   flex-direction: column;
   display: inline-flex;
