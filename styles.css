@@ -71,7 +71,6 @@ input {
 }
 .remote-only-container {
   display: flex;
-  align-items: baseline;
 }
 .salary-boxes {
   flex-direction: column;
@@ -90,4 +89,9 @@ button {
 
 .buttons {
   white-space: nowrap;
+}
+
+#flex-label {
+  display: flex;
+  align-items: baseline;
 }
