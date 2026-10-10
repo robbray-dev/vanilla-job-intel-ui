@@ -104,3 +104,13 @@ button {
 #inner-browse-page-body {
   border: 1px solid black;
 }
+
+#ss {
+  display: flex;
+  border: 1px solid black;
+}
+
+#ft {
+  margin: 0;
+  flex: 1;
+}
