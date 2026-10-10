@@ -123,5 +123,13 @@ button {
 }
 
 #job-count {
-  all: initial;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+}
+
+.job-entry {
+  width: 55vw;
+  border: 1px solid black;
 }
