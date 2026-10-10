@@ -102,6 +102,7 @@ button {
 }
 
 #inner-browse-page-body {
+  width: 55vw;
   border: 1px solid black;
 }
 
