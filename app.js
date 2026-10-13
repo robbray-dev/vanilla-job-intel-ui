@@ -1,12 +1,12 @@
 // fetch returns a promise that is responsible for getting the resource in the assets folder via http
 
 let a = fetch("./asset/data/jobs.json");
-
+console.log("promise a ", a);
 let b = a.then((response) => response.json());
 
-Promise.all([a, b]).then((values) => {
+Promise.allSettled([a, b]).then((values) => {
 
-    console.log("start");
+    console.log("start of settled call");
     console.log(values);
     console.log("end");
 })
