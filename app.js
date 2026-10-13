@@ -16,7 +16,12 @@ Promise.allSettled([a]).then((values) => {
     console.log("end of a ");
 })
 let b = a.then((response) => response.json());
+Promise.allSettled([b]).then((values) => {
 
+    console.log("start of settled call for b");
+    console.log(values);
+    console.log("end of b ");
+})
 Promise.allSettled([a, b]).then((values) => {
 
     console.log("start of settled call");
