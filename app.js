@@ -6,8 +6,15 @@ fetch("./asset/data/jobs.json")
     .then((data) => { console.log(data) })
     .catch((error) => console.error(error));
 */
-let a = fetch("./asset/data/jobs.json");
+let a = fetch("./asset/data/jobss.json");
 console.log("promise a ", a); // how do i see what a promise returns
+
+Promise.allSettled([a]).then((values) => {
+
+    console.log("start of settled call for a");
+    console.log(values);
+    console.log("end of a ");
+})
 let b = a.then((response) => response.json());
 
 Promise.allSettled([a, b]).then((values) => {
