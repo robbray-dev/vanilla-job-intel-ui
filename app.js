@@ -13,13 +13,10 @@ fetch("./asset/data/jobs.json")
     console.log("end");
 })
 */
-let a = fetch("./asset/data/jobs.json");
-console.log("promise a ", a); // how do i see what a promise returns
+let a = fetch("");
 
-let b = a.then((response) => response.json());
-
-console.log("promise b ", b); 
-
+let b = a.then((response) => response.json(), console.log("failure"));
+console.log("promise b ", b);
 
 let c = b.then((data) => { console.log(data) });
 
