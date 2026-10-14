@@ -20,7 +20,7 @@ console.log("promis a ", a);
 let b = a.then((response) => response.json());
 console.log("promise b ", b);
 
-let c = b.then((data) => { console.log(data) }, () => {console.error("spurs wone one")});
+let c = b.then((data) => { console.log(data) }, (x) => { throw x; });
 console.log("promise c ", c);
 
 // let d = c.catch((error) => console.error(error));
