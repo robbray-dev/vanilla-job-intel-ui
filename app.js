@@ -18,7 +18,7 @@ let a = fetch("");
 let b = a.then((response) => response.json(), console.log("failure"));
 console.log("promise b ", b);
 
-let c = b.then((data) => { console.log(data) });
+// let c = b.then((data) => { console.log(data) });
 
-let d = c.catch((error) => console.error(error));
+// let d = c.catch((error) => console.error(error));
 
