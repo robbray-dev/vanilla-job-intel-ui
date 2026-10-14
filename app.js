@@ -20,8 +20,11 @@ console.log("promis a ", a);
 let b = a.then((response) => response.json());
 console.log("promise b ", b);
 
-let c = b.then((data) => { console.log(data) }, (x) => { throw x; });
+let c = b.then((data) => { console.log(data) });
 console.log("promise c ", c);
 
-// let d = c.catch((error) => console.error(error));
+let d = c.then(() => multiply(4,3));
+console.log("promise d ", d);
 
+let e = d.catch((s) => console.error(s));
+console.log("promise e ", e);
