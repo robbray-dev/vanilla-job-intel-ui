@@ -16,15 +16,12 @@ fetch("./asset/data/jobs.json")
 const multiply = function (a, b) { return a * b }
 
 let a = fetch("");
-console.log("promis a ", a);
+console.log("promise a ", a);
 let b = a.then((response) => response.json());
 console.log("promise b ", b);
 
 let c = b.then((data) => { console.log(data) });
 console.log("promise c ", c);
 
-let d = c.then(() => multiply(4,3));
+let d = c.catch((s) => console.error(s));
 console.log("promise d ", d);
-
-let e = d.catch((s) => console.error(s));
-console.log("promise e ", e);
