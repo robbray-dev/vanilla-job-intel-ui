@@ -17,6 +17,8 @@ const multiply = function (a, b) { return a * b }
 
 let a = fetch("");
 console.log("promise a ", a);
+
+// why is .then setup to return a new promise?
 let b = a.then((response) => response.json());
 console.log("promise b ", b);
 
