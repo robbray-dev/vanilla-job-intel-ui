@@ -26,11 +26,14 @@ console.log("promise a ", a);
 2. the execution of the .then is depedent on the result of the previous promise
 3. design choice to not cap the users at a limit of operations to perform
 */
-let b = a.then((response) => response.json(), );
+let b = a.then((response) => response.json());
 console.log("promise b ", b);
+
+let catchWorkEx = b.catch(() => console.log("catch that works example"));
+console.log("promise catchWorkEx ", catchWorkEx);
 
 let c = b.then((data) => { console.log(data) }, () => {console.log("banks house")});
 console.log("promise c ", c);
 
-let d = c.then(() => console.log("h"));
+let d = c.catch(() => console.log("h"));
 console.log("promise d ", d);
