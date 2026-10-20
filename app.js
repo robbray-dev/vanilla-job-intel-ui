@@ -19,7 +19,14 @@ let a = fetch("");
 console.log("promise a ", a);
 
 // why is .then setup to return a new promise?
-let b = a.then((response) => response.json());
+
+// .then returns a promise because
+/*
+1. the .then performs some asynchronous operation
+2. the execution of the .then is depedent on the result of the previous promise
+3. design choice to not cap the users at a limit of operations to perform
+*/
+let b = a.then((response) => response.json(), );
 console.log("promise b ", b);
 
 let c = b.then((data) => { console.log(data) });
