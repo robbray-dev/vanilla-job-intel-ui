@@ -15,7 +15,7 @@ fetch("./asset/data/jobs.json")
 */
 const multiply = function (a, b) { return a * b }
 
-let a = fetch("");
+let a = fetch("./asset/data/jobs.json");
 console.log("promise a ", a);
 
 // why is .then setup to return a new promise?
@@ -32,7 +32,7 @@ console.log("promise b ", b);
 let catchWorkEx = b.catch(() => console.log("catch that works example"));
 console.log("promise catchWorkEx ", catchWorkEx);
 
-let c = b.then((data) => { console.log(data) }, () => {console.log("banks house")});
+let c = b.then(() => { return 12 }, () => {console.log("banks house")});
 console.log("promise c ", c);
 
 let d = c.catch(() => console.log("h"));
