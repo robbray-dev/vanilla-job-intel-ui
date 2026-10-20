@@ -29,8 +29,8 @@ console.log("promise a ", a);
 let b = a.then((response) => response.json(), );
 console.log("promise b ", b);
 
-let c = b.then((data) => { console.log(data) });
+let c = b.then((data) => { console.log(data) }, () => {console.log("banks house")});
 console.log("promise c ", c);
 
-let d = c.catch((s) => console.error(s));
+let d = c.then(() => console.log("h"));
 console.log("promise d ", d);
