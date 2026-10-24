@@ -33,3 +33,4 @@ fetch("./asset/data/jobs.json")
 
    
 
+// on to data rendering!!
