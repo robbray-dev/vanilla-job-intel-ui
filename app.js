@@ -34,3 +34,5 @@ fetch("./asset/data/jobs.json")
    
 
 // on to data rendering!!
+
+//looking into async and await in js
