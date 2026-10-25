@@ -39,25 +39,39 @@ fetch("./asset/data/jobs.json")
 //looking into async and await in js
 
 async function fetchData() {
+        const response = fetch('./asset/data/jobs.json');
 
-       // want to figure out why this does print the resposne data 
-       // but the other await and console log doesnt.
-    const response = await fetch('sh');
-/*
+       // want to figure out why this does print the resposne data
+    // but the other await and console log doesnt.
+    try {
+    const response = fetch('./asset/data/jobs.json');
+    console.log('response', response);
+    } catch (error) {
+         console.error('Error fetching data in init fetch:', error);
+    }
+    /*
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    */
 
-   // want to figure out why this doesnt print the observing data.
-    const data = await response.json();
-    console.log('observing data ');
-    return data;
-*/
+    // want to figure out why this doesnt print the observing data.
+    try {
+        
+    const data = response.json();
+    console.log('observing data ', data);
+        return data;
+    } catch (error) {
+                 console.error('Error fetching data in fetch json:', error);
+
+        }
+
    
 }
 
 console.log('observing the state of the promise ', fetchData());
 
+/*
 async function demoFunction() {
     const demo = await fetch("./asset/data/jobs.json");
     console.log('seeing if await deconstructs the fetch ' +
@@ -66,3 +80,4 @@ async function demoFunction() {
 
 
 console.log('demoFunction call', demoFunction());
+*/
