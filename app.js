@@ -26,18 +26,19 @@ console.log("promise d ", d);
 3. design choice to not cap the users at a limit of operations to perform
 */
 
-/*
-fetch("./asset/data/jobs.json")
+
+const a = fetch("./asset/data/jobs.json")
     .then((response) => response.json())
-    .then((data) => { console.log(data) })
+    .then((data) => { console.log('data ', data); return data; })
     .catch((error) => console.error("Error loading JSON file", error));
 
-*/
 
+console.log('promise a ', a);
 // on to data rendering!!
 
 //looking into async and await in js
 
+/* 
 async function fetchData() {
     const response = await fetch('./asset/data/jobs.json');
 
@@ -52,3 +53,4 @@ async function fetchData() {
 }
 
 console.log('observing the state of the promise ', fetchData());
+*/
