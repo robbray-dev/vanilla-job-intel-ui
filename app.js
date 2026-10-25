@@ -36,3 +36,11 @@ fetch("./asset/data/jobs.json")
 // on to data rendering!!
 
 //looking into async and await in js
+
+async function name() {
+    const response = await fetch('./asset/data/jobs.json');
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+}
