@@ -25,11 +25,14 @@ console.log("promise d ", d);
 2. the execution of the .then is depedent on the result of the previous promise
 3. design choice to not cap the users at a limit of operations to perform
 */
-
+function printAndReturn(string) {
+    console.log('inside print and return method ', string);
+    return string;
+}
 
 const a = fetch("./asset/data/jobs.json")
     .then((response) => response.json())
-    .then((data) => { console.log('data ', data); return data; })
+    .then((data) => {printAndReturn(data)})
     .catch((error) => console.error("Error loading JSON file", error));
 
 
