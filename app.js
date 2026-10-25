@@ -25,25 +25,21 @@ console.log("promise d ", d);
 2. the execution of the .then is depedent on the result of the previous promise
 3. design choice to not cap the users at a limit of operations to perform
 */
-function printAndReturn(string) {
-    console.log('inside print and return method ', string);
-    return string;
-}
 
-const a = fetch("./asset/data/jobs.json")
+/*
+fetch("./asset/data/jobs.json")
     .then((response) => response.json())
-    .then((data) => {printAndReturn(data)})
+    .then((data) => { console.log(data) })
     .catch((error) => console.error("Error loading JSON file", error));
 
+*/
 
-console.log('promise a ', a);
 // on to data rendering!!
 
 //looking into async and await in js
 
-/* 
 async function fetchData() {
-    const response = await fetch('./asset/data/jobs.json');
+    const response = await fetch('');
 
     console.log(response);
 
@@ -56,4 +52,3 @@ async function fetchData() {
 }
 
 console.log('observing the state of the promise ', fetchData());
-*/
