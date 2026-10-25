@@ -43,7 +43,6 @@ async function fetchData() {
        // want to figure out why this does print the resposne data 
        // but the other await and console log doesnt.
     const response = await fetch('sh');
-    console.log(typeof(response));
 /*
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -60,7 +59,7 @@ async function fetchData() {
 console.log('observing the state of the promise ', fetchData());
 
 async function demoFunction() {
-    const demo = fetch("./asset/data/jobs.json");
+    const demo = await fetch("./asset/data/jobs.json");
     console.log('seeing if await deconstructs the fetch ' +
         'to return the fulfilled value:', demo);
 }
