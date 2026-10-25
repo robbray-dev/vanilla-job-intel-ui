@@ -46,6 +46,7 @@ async function fetchData() {
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    return 10;
 }
 
-fetchData()
+console.log('observing the state of the promise ', fetchData());
