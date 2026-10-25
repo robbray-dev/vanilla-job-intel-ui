@@ -39,6 +39,7 @@ fetch("./asset/data/jobs.json")
 //looking into async and await in js
 
 async function fetchData() {
+    try {
     const response = await fetch('');
 
     console.log(response);
@@ -48,7 +49,11 @@ async function fetchData() {
     }
 
     const data = await response.json();
-    return data;
+        return data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return [];
+    }
 }
 
 console.log('observing the state of the promise ', fetchData());
