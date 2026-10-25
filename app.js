@@ -70,14 +70,3 @@ async function fetchData() {
 }
 
 console.log('observing the state of the promise ', fetchData());
-
-/*
-async function demoFunction() {
-    const demo = await fetch("./asset/data/jobs.json");
-    console.log('seeing if await deconstructs the fetch ' +
-        'to return the fulfilled value:', demo);
-}
-
-
-console.log('demoFunction call', demoFunction());
-*/
