@@ -40,11 +40,11 @@ fetch("./asset/data/jobs.json")
 
 async function fetchData() {
 
-       // want to figure out why this does print the resposne data but the other await and console log doesnt.
-    const response = await fetch('./assets/data/jobs.json');
-    console.log('here ',response);
-    console.log('s');
-
+       // want to figure out why this does print the resposne data 
+       // but the other await and console log doesnt.
+    const response = await fetch('sh');
+    console.log(typeof(response));
+/*
     if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -52,8 +52,18 @@ async function fetchData() {
    // want to figure out why this doesnt print the observing data.
     const data = await response.json();
     console.log('observing data ');
-        return data;
+    return data;
+*/
    
 }
 
 console.log('observing the state of the promise ', fetchData());
+
+async function demoFunction() {
+    const demo = fetch("./asset/data/jobs.json");
+    console.log('seeing if await deconstructs the fetch ' +
+        'to return the fulfilled value:', demo);
+}
+
+
+console.log('demoFunction call', demoFunction());
