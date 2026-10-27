@@ -38,18 +38,31 @@ fetch("./asset/data/jobs.json")
 
 //looking into async and await in js
 
+//async function makes promise based code easier to write and read
+//returns a promise with the value being whatever this function returns
 async function fetchData() {
 
+    //try catch to handle errors
     try {
+
+        //await makes the async function to hold on operation until the promise 
+        // assoicated with await is done, await deconstructs the promises value
         const response = await fetch('./asset/data/jobs.json');
 
+        // case if the response is not okay or incorrect
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
+        // promise operation to get json
         const data = await response.json();
+
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
+
+        // return an empty array on an error 
+        // instead of throwing error for rejection cause it leads to uncaught errors.
         return [];
         
     } 
