@@ -39,12 +39,11 @@ fetch("./asset/data/jobs.json")
 //looking into async and await in js
 
 async function fetchData() {
-        const response = fetch('./asset/data/jobs.json');
+        const response =  fetch('./asset/data/jobs.json');
 
        // want to figure out why this does print the resposne data
     // but the other await and console log doesnt.
     try {
-    const response = fetch('./asset/data/jobs.json');
     console.log('response', response);
     } catch (error) {
          console.error('Error fetching data in init fetch:', error);
