@@ -70,3 +70,6 @@ async function fetchData() {
 }
 
 console.log('observing the state of the promise ', fetchData());
+
+
+// on to data rendering and dom stuff!
