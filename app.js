@@ -76,11 +76,9 @@ console.log('observing the state of the promise ', fetchData());
 // on to data rendering and dom stuff!
 
 
-fetchData().then(jobs => {
-    console.log('jobs', jobs);
-    console.log('obj values present', Object.values(jobs));
-    const valsArr = Object.values(jobs);
-    valsArr[0].forEach(job => {
+fetchData().then(data => {
+    const jobs = data["jobs"];
+    jobs.forEach(job => {
         console.log('ele', job);
     });
 })
