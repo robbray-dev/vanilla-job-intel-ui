@@ -41,13 +41,12 @@ fetch("./asset/data/jobs.json")
 async function fetchData() {
 
     try {
-        const response = await fetch('./asset/data/job.json');
+        const response = await fetch('./asset/data/jobs.json');
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log('testing data ', data);
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
