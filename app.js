@@ -57,6 +57,7 @@ async function fetchData() {
         // promise operation to get json
         const data = await response.json();
 
+        console.log('data:', data);
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -73,3 +74,12 @@ console.log('observing the state of the promise ', fetchData());
 
 
 // on to data rendering and dom stuff!
+
+
+fetchData().then(jobs => {
+    console.log('jobs', jobs);
+    console.log('obj key present', Object.keys(jobs));
+    jobs.forEach(job => {
+        console.log('ele', job);
+    });
+})
