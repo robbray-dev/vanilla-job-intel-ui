@@ -51,11 +51,7 @@ async function fetchData() {
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
-        try {
-            throw new Error('fetchData should be reject');
-        } catch (error) {
-            console.error('catching new error:', error);
-            }
+        throw error;
         
     } 
    
