@@ -78,8 +78,9 @@ console.log('observing the state of the promise ', fetchData());
 
 fetchData().then(jobs => {
     console.log('jobs', jobs);
-    console.log('obj key present', Object.keys(jobs));
-    jobs.forEach(job => {
+    console.log('obj values present', Object.values(jobs));
+    const valsArr = Object.values(jobs);
+    valsArr[0].forEach(job => {
         console.log('ele', job);
     });
 })
