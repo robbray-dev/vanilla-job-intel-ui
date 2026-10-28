@@ -129,7 +129,7 @@ button {
   margin-bottom: 12px;
 }
 
-.job-entry {
+#job-entry {
   width: 55vw;
   border: 1px solid black;
 }

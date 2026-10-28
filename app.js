@@ -75,10 +75,19 @@ console.log('observing the state of the promise ', fetchData());
 
 // on to data rendering and dom stuff!
 
+const container = document.getElementById('job-entry');
 
 fetchData().then(data => {
+
+    const jobList = document.createElement('ul');
+
     const jobs = data["jobs"];
     jobs.forEach(job => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${job.title} @${job.companyName}`;
+        jobList.appendChild(listItem);
         console.log('ele', job);
     });
-})
+
+    container.appendChild(jobList);
+});
