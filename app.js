@@ -76,9 +76,9 @@ console.log('observing the state of the promise ', fetchData());
 // on to data rendering and dom stuff!
 
 const container = document.getElementById('job-entry');
+console.log("here2");
 
 fetchData().then(data => {
-
     const jobList = document.createElement('ul');
 
     const jobs = data["jobs"];
@@ -90,4 +90,4 @@ fetchData().then(data => {
     });
 
     container.appendChild(jobList);
-});
+})
