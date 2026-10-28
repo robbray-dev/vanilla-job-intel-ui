@@ -56,8 +56,6 @@ async function fetchData() {
 
         // promise operation to get json
         const data = await response.json();
-
-        console.log('data:', data);
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -75,6 +73,7 @@ console.log('observing the state of the promise ', fetchData());
 
 // on to data rendering and dom stuff!
 
+// DOES THE DOM LOAD COMPLETE BEFORE RUNNING AN ASYNC FUNCTION?
 const container = document.getElementById('job-entry');
 console.log("here2");
 
