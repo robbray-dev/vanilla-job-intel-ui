@@ -87,6 +87,9 @@ for (var i = 0, max = all.length; i < max; i++) {
      
 console.log("here2");
 
+
+// try a generic google search, if no results,
+//  learn more on how the browser parses the html/populates the dom. and/or how the browser handles javascript.
 fetchData().then(data => {
     var all = document.getElementsByTagName("*");
     console.log(all.length);
