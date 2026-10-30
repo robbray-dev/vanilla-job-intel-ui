@@ -75,6 +75,16 @@ console.log('observing the state of the promise ', fetchData());
 
 // DOES THE DOM LOAD COMPLETE BEFORE RUNNING AN ASYNC FUNCTION?
 const container = document.getElementById('job-entry');
+
+
+// AT THIS POINT THE HTML COLLECTION IS ONLY 7 ITEMS, SO ONLY 7 ITEMS IN THE DOM.
+var all = document.getElementsByTagName("*");
+console.log(all);
+
+for (var i = 0, max = all.length; i < max; i++) {
+    console.log(all[i]);
+}
+     
 console.log("here2");
 
 fetchData().then(data => {
