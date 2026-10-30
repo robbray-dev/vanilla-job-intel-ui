@@ -97,6 +97,14 @@ fetchData().then(data => {
         jobList.appendChild(listItem);
         console.log('ele', job);
     });
+    var all = document.getElementsByTagName("*");
+    console.log(all.length);
+    console.log(all);
+
+    for (var i = 0, max = all.length; i < max; i++) {
+        console.log(all[i]);
+    }
+     
 
     container.appendChild(jobList);
 })
