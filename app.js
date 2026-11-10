@@ -42,6 +42,8 @@ fetch("./asset/data/jobs.json")
 //returns a promise with the value being whatever this function returns
 async function fetchData() {
 
+    console.log("timer"
+    );
     //try catch to handle errors
     try {
 
