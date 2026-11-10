@@ -74,6 +74,9 @@ console.log('observing the state of the promise ', fetchData());
 // on to data rendering and dom stuff!
 
 // DOES THE DOM LOAD COMPLETE BEFORE RUNNING AN ASYNC FUNCTION?
+
+// TODO: Why is job-entry div not populated in the dom at this point, but in the
+// fetchData.then chain it would be!
 const container = document.getElementById('job-entry');
 
 
