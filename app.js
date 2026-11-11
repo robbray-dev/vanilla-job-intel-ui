@@ -84,7 +84,6 @@ console.log('observing the state of the promise ', fetchData());
 // that returns to the program or browser before calling the then chain.
 
 //figure out what occurs for the dom to be populated in .then. maybe thread execution?
-const container = document.getElementById('job-entry');
 
 
 // AT THIS POINT THE HTML COLLECTION IS ONLY 7 ITEMS, SO ONLY 7 ITEMS IN THE DOM.
@@ -103,6 +102,8 @@ console.log("here2");
 
 
 fetchData().then(data => {
+    const container = document.getElementById('job-entry');
+
     var all = document.getElementsByTagName("*");
     console.log(all.length);
     console.log(all);
