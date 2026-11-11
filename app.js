@@ -79,6 +79,11 @@ console.log('observing the state of the promise ', fetchData());
 
 // TODO: Why is job-entry div not populated in the dom at this point, but in the
 // fetchData.then chain it would be!
+
+// TODO: figure out the execution of the js, ie is async running on a seperate thread
+// that returns to the program or browser before calling the then chain.
+
+//figure out what occurs for the dom to be populated in .then. maybe thread execution?
 const container = document.getElementById('job-entry');
 
 
@@ -95,6 +100,8 @@ console.log("here2");
 
 // try a generic google search, if no results,
 //  learn more on how the browser parses the html/populates the dom. and/or how the browser handles javascript.
+
+
 fetchData().then(data => {
     var all = document.getElementsByTagName("*");
     console.log(all.length);
