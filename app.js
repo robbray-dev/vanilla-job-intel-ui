@@ -95,9 +95,7 @@ for (var i = 0, max = all.length; i < max; i++) {
      
 console.log("here2");
 
-// try a generic google search, if no results,
-//  learn more on how the browser parses the html/populates the dom. and/or how the browser handles javascript.
-
+// FIGURED OUT THAT MULITPLE JS SCRIPTS ARE LOADED INTO THE BROWSER AT ONCE
 
 fetchData().then(data => {
     const container = document.getElementById('job-entry');
