@@ -47,11 +47,12 @@ async function fetchData() {
     //try catch to handle errors
     try {
 
-        //await makes the async function to hold on operation until the promise 
+        //await makes the async function to hold on operation until the promise
         // assoicated with await is done, await deconstructs the promises value
-        const response = await fetch('./asset/data/jobs.json');
         const container = document.getElementById('job-entry');
         console.log('printer: ', container);
+        const response = await fetch('./asset/data/jobs.json');
+       
 
 
         // case if the response is not okay or incorrect
