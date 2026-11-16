@@ -75,7 +75,8 @@ async function fetchData() {
 
 console.log('observing the state of the promise ', fetchData());
 
-
+const container = document.getElementById('job-entry');
+console.log('global container:', container)
 // on to data rendering and dom stuff!
 
 // DOES THE DOM LOAD COMPLETE BEFORE RUNNING AN ASYNC FUNCTION?
