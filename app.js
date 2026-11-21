@@ -40,6 +40,8 @@ fetch("./asset/data/jobs.json")
 
 //async function makes promise based code easier to write and read
 //returns a promise with the value being whatever this function returns
+
+// TODO 11.21 - figure out a debugger and watch async in action
 async function fetchData() {
 
     console.log("timer"
