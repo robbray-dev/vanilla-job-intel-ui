@@ -96,18 +96,8 @@ console.log('global container:', container)
 var all = document.getElementsByTagName("*");
 console.log(all);
 
-for (var i = 0, max = all.length; i < max; i++) {
-    console.log(all[i]);
-}
 
-fetchData().then(data => {
-    for (var i = 0; i < 100000000; i++) {
-        continue;
-    }
-    console.log('coco puffs');
-});
-     
-console.log("here2");
+
 
 // FIGURED OUT THAT MULITPLE JS SCRIPTS ARE LOADED INTO THE BROWSER AT ONCE
 
