@@ -44,8 +44,6 @@ fetch("./asset/data/jobs.json")
 // TODO 11.21 - figure out a debugger and watch async in action
 async function fetchData() {
 
-    console.log("timer"
-    );
     //try catch to handle errors
     try {
 
@@ -124,4 +122,3 @@ fetchData().then(data => {
     console.log('the container: ', container);
     container.appendChild(jobList);
 })
-console.log('hey');
