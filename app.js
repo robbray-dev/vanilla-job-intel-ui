@@ -51,6 +51,8 @@ async function fetchData() {
         // assoicated with await is done, await deconstructs the promises value
         
         const response = await fetch('./asset/data/jobs.json');
+        const container = document.getElementById('job-entry');
+        console.log('printer: ', container);
 
 
         // case if the response is not okay or incorrect
@@ -72,6 +74,7 @@ async function fetchData() {
    
 }
 
+console.log('observing the state of the promise ', fetchData());
 
 const container = document.getElementById('job-entry');
 console.log('global container:', container)
@@ -87,6 +90,9 @@ console.log('global container:', container)
 
 //figure out what occurs for the dom to be populated in .then. maybe thread execution?
 
+// AT THIS POINT THE HTML COLLECTION IS ONLY 7 ITEMS, SO ONLY 7 ITEMS IN THE DOM.
+var all = document.getElementsByTagName("*");
+console.log(all);
 
 
 
