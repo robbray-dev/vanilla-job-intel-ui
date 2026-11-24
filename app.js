@@ -51,9 +51,10 @@ async function fetchData() {
         // assoicated with await is done, await deconstructs the promises value
         
         const response = await fetch('./asset/data/jobs.json');
+       /* 
         const container = document.getElementById('job-entry');
         console.log('printer: ', container);
-
+*/
 
         // case if the response is not okay or incorrect
         if (!response.ok) {
@@ -73,11 +74,12 @@ async function fetchData() {
     } 
    
 }
-
+/*
 console.log('observing the state of the promise ', fetchData());
 
 const container = document.getElementById('job-entry');
 console.log('global container:', container)
+*/
 // on to data rendering and dom stuff!
 
 // DOES THE DOM LOAD COMPLETE BEFORE RUNNING AN ASYNC FUNCTION?
@@ -91,9 +93,10 @@ console.log('global container:', container)
 //figure out what occurs for the dom to be populated in .then. maybe thread execution?
 
 // AT THIS POINT THE HTML COLLECTION IS ONLY 7 ITEMS, SO ONLY 7 ITEMS IN THE DOM.
+/*
 var all = document.getElementsByTagName("*");
 console.log(all);
-
+*/
 
 
 
@@ -101,6 +104,7 @@ console.log(all);
 
 fetchData().then(data => {
     const container = document.getElementById('job-entry');
+/*
     var all = document.getElementsByTagName("*");
     console.log(all.length);
     console.log(all);
@@ -108,6 +112,7 @@ fetchData().then(data => {
     for (var i = 0, max = all.length; i < max; i++) {
         console.log(all[i]);
     }
+  */  
     const jobList = document.createElement('ul');
 
     const jobs = data["jobs"];
@@ -115,10 +120,11 @@ fetchData().then(data => {
         const listItem = document.createElement('li');
         listItem.textContent = `${job.title} @${job.companyName}`;
         jobList.appendChild(listItem);
-        console.log('ele', job);
+        // console.log('ele', job);
     });
    
-     
+     /*
     console.log('the container: ', container);
+    */
     container.appendChild(jobList);
 })
