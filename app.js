@@ -51,8 +51,6 @@ async function fetchData() {
         // assoicated with await is done, await deconstructs the promises value
         
         const response = await fetch('./asset/data/jobs.json');
-        const container = document.getElementById('job-entry');
-        console.log('printer: ', container);
 
 
         // case if the response is not okay or incorrect
