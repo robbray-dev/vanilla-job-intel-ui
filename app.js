@@ -72,7 +72,6 @@ async function fetchData() {
    
 }
 
-console.log('observing the state of the promise ', fetchData());
 
 const container = document.getElementById('job-entry');
 console.log('global container:', container)
@@ -88,9 +87,6 @@ console.log('global container:', container)
 
 //figure out what occurs for the dom to be populated in .then. maybe thread execution?
 
-// AT THIS POINT THE HTML COLLECTION IS ONLY 7 ITEMS, SO ONLY 7 ITEMS IN THE DOM.
-var all = document.getElementsByTagName("*");
-console.log(all);
 
 
 
