@@ -112,17 +112,21 @@ fetchData().then(data => {
     for (var i = 0, max = all.length; i < max; i++) {
         console.log(all[i]);
     }
-  */  
+  */
+ 
+    /*
     const jobList = document.createElement('ul');
 
     const jobs = data["jobs"];
     jobs.forEach(job => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${job.title} @${job.companyName}`;
+        listItem.textContent = `${job.title}`;
         jobList.appendChild(listItem);
         // console.log('ele', job);
     });
-   
+
+    */
+    
      /*
     console.log('the container: ', container);
     */
