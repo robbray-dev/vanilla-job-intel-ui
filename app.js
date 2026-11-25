@@ -129,9 +129,16 @@ fetchData().then(data => {
     const jobs = data["jobs"];
     jobs.forEach(element => {
         const individualJob = document.createElement('div');
+
         const jobTitle = document.createElement('h4');
         jobTitle.textContent = `${element.title}`;
         individualJob.appendChild(jobTitle);
+
+        const jobCompany = document.createElement('span');
+        jobCompany.textContent = `${element.companyName}`;
+
+        individualJob.appendChild(jobCompany);
+        
         container.appendChild(individualJob);
 
     });
