@@ -139,10 +139,9 @@ fetchData().then(data => {
         const jobLocation = document.createElement('span');
         jobLocation.textContent = `${element.location}`;
 
-        individualJob.appendChild(jobTitle);
-        individualJob.appendChild(jobCompany);
-        individualJob.appendChild(jobLocation);
-        
+
+        individualJob.append(jobTitle, jobCompany, jobLocation);
+
         container.appendChild(individualJob);
 
     });
