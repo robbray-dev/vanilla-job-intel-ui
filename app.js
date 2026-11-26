@@ -134,13 +134,24 @@ fetchData().then(data => {
         jobTitle.textContent = `${element.title}`;
 
         const jobCompany = document.createElement('span');
-        jobCompany.textContent = `${element.companyName}`;
+        jobCompany.textContent = `${element.companyName} `;
 
         const jobLocation = document.createElement('span');
         jobLocation.textContent = `${element.location}`;
 
+        // create a div
+        const salaryAndSkill = document.createElement('div');
+        // nest the salary and skills in it
+        const jobSalary = document.createElement('span');
+        jobSalary.textContent = `${element.salaryMin} - ${element.salaryMax}`
 
-        individualJob.append(jobTitle, jobCompany, jobLocation);
+
+
+        // nest the div inside the individual job div
+        salaryAndSkill.append(jobSalary);
+        individualJob.append(jobTitle, jobCompany, jobLocation, salaryAndSkill);
+
+        // TODO: Make items flexible and use flex box
 
         container.appendChild(individualJob);
 
