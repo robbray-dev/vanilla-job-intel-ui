@@ -149,6 +149,7 @@ fetchData().then(data => {
 
         // nest the div inside the individual job div
         salaryAndSkill.append(jobSalary);
+        
         individualJob.append(jobTitle, jobCompany, jobLocation, salaryAndSkill);
 
         // TODO: Make items flexible and use flex box
