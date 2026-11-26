@@ -104,15 +104,15 @@ console.log(all);
 
 fetchData().then(data => {
     const container = document.getElementById('job-entry');
-/*
-    var all = document.getElementsByTagName("*");
-    console.log(all.length);
-    console.log(all);
-
-    for (var i = 0, max = all.length; i < max; i++) {
-        console.log(all[i]);
-    }
-  */
+    /*
+        var all = document.getElementsByTagName("*");
+        console.log(all.length);
+        console.log(all);
+    
+        for (var i = 0, max = all.length; i < max; i++) {
+            console.log(all[i]);
+        }
+      */
  
     /*
     const jobList = document.createElement('ul');
@@ -144,12 +144,21 @@ fetchData().then(data => {
         // nest the salary and skills in it
         const jobSalary = document.createElement('span');
         jobSalary.textContent = `${element.salaryMin} - ${element.salaryMax}`
-
-
-
-        // nest the div inside the individual job div
-        salaryAndSkill.append(jobSalary);
         
+        salaryAndSkill.append(jobSalary);
+
+        // get skills array
+        element.skills.forEach(aSkill => {
+            // for each skill in a job create a span for it
+            const skill = document.createElement('span');
+            skill.textContent = ' ' + aSkill;
+
+            salaryAndSkill.append(skill);
+
+        });
+
+        
+
         individualJob.append(jobTitle, jobCompany, jobLocation, salaryAndSkill);
 
         // TODO: Make items flexible and use flex box
@@ -158,8 +167,8 @@ fetchData().then(data => {
 
     });
     
-     /*
-    console.log('the container: ', container);
-    container.appendChild(jobList);
-    */
-})
+    /*
+   console.log('the container: ', container);
+   container.appendChild(jobList);
+   */
+});
